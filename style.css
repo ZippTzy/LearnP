@@ -423,13 +423,9 @@ section #text {
     }
 }
 
-@media (max-width:429px) {
+@media (min-width:0px) and (max-width:429px)  {
     #header {
-        position: absolute;
-        /* To Overlap with background */
-        top: 0;
-        left: 0;
-        width: 100%;
+        
         padding: 1.5em 5em;
         display: flex;
         /* To get elements in row */
@@ -460,6 +456,7 @@ section #text {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        gap: 10px;
     }
     
     #header ul li {
@@ -467,10 +464,6 @@ section #text {
         /* To Remove dot */
         margin: 0px 10px;
         font-size: 10px;
-    }
-    header #header{
-        display: flex;
-        flex-direction: column;
     }
     #header .logo-name .pic-logo{
         max-width: 100px ;
@@ -494,13 +487,19 @@ section #text {
     }
     
 
+}
 
 /* Properties for mobile */
-@media (max-width: 650px) {
-    #header{
+@media (min-width:429px) and (max-width: 650px) {
+    #header {
+        padding: 1.5em 5em;
         display: flex;
+        /* To get elements in row */
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99999;
+        /* Header shld be above everything */
     }
 
     #header ul {
@@ -602,7 +601,6 @@ section #text {
         left: 50%;
         width: 15%;
     }
-}
 .glass .team1{
     display:flex;
     flex-direction:column;
@@ -619,7 +617,9 @@ section #text {
     max-width: 200px;
     max-height: 300px;
 }
-@media (max-width: 935px) {
+}
+
+@media (min-width:650px) and (max-width: 935px) {
     #header .logo-name img{
         max-width: 160px;
     }
@@ -627,9 +627,8 @@ section #text {
     #header {
         padding: 1em 2em;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: nowrap;
     }
     .pic-logo{
         width: 150px;
@@ -651,5 +650,4 @@ section #text {
         max-height: 300px;
     }
     
-}
 }
