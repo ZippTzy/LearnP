@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnPlay</title>
+    <link rel="stylesheet" href="hstyle.css" />
+    <link
+      rel="icon"
+      href="../assets/mascot.png"
+      sizes="32x32"
+      type="image/png"
+    />
+
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="background-video">
+      <source src="assets/26796-359604154.mp4" type="video/mp4">
+    </video>
+    <div class="quiz-container" class="glass">
+      <div class="header">
+        <div class="con">
+          <video autoplay loop muted plays-inline class="background-clip1">
+            <source src="/assets/mascotanimation.mp4" type="video/mp4" />
+          </video>
+            <button id="logOut-btn" class="con"><a href="index.html"></a>Log Out</button>
+        </div>
+        <div class="info">
+        <div class="top-row">
+        <span>Hi</span>
+          <h5 class="username">Username!</h5>
+          </div>
+        <strong>E-LEARNING FOR KIDS</strong>
+        </div>
+
+      </div>
+
+      <div class="nav-buttons">
+        <button id="home">HOME</button>
+        <button id="about">ABOUT</button>
+        <button id="profile">SETTINGS</button>
+      </div>
+
+        <div id="category-selection">
+          <div class="" id="modeDiv" >
+          <img id="modeImg" src="https://img.icons8.com/color/96/controller.png">
+          <h1  id="mode-selector">Online Games</h1>
+          </div>
+          <div class="categories">
+            <div class="category-card" data-category="Math">
+              <div class="category-label">MATH</div>
+            </div>
+            <div class="category-card" data-category="Science">
+              <div class="category-label">SCIENCE</div>
+            </div>
+            <div class="category-card" data-category="Vocabulary">
+              <div class="category-label">VOCABULARY</div>
+            </div>
+            <div class="category-card" data-category="Filipino">
+              <div class="category-label">FILIPINO</div>
+            </div>
+            <div class="category-card" data-category="Minigames">
+              <div class="category-label">MINIGAMES</div>
+            </div>  
+            </div>
+
+
+
+            <div class="subcategories hidden" id="subcategory-list">
+              <!-- Function.js nai bahala ani, ayaw hilabti -->
+            </div>
+              <button id="startButton" class="hidden">Start Quiz</button>
+          </div> 
+    </div>
+    <audio id="bg-music" src="../assets/sounds/bcg1-lofi.mp3" loop></audio>
+    <script src="mcq.js"></script>
+    <script src="function.js"></script>
+    <script src="../assets/disableForward.js"></script>
+  </body>
+</html>
